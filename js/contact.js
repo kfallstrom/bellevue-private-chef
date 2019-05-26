@@ -2,11 +2,10 @@
  * Custom contact handler
  */
 
-(function($) {   
-
+(function($) {
     var contactForm = document.getElementById("contactform");
     var successMessage = document.getElementById("successmessage");
-    
+
     contactForm.onsubmit = function(event) {
         event.preventDefault(); // Don't let the browser submit the form.
         var payload = {};
@@ -18,7 +17,7 @@
     
         // Post the payload to the contact endpoint.
         fetch("http://localhost:7071/api/contactresponsefunction", {
-            method: 'post',
+            method: "post",
             body: JSON.stringify(payload)
         }).then(resp => {
             if (!resp.ok) {
@@ -29,5 +28,5 @@
             successMessage.style.display = "block";
             contactForm.style.display = "none";
         });
-    }
+    };
 });

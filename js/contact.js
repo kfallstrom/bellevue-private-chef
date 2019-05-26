@@ -29,4 +29,4 @@
             contactForm.style.display = "none";
         });
     };
-});
+})(jQuery); // End of use strict

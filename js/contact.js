@@ -11,7 +11,7 @@
         });
     
         // Post the payload to the contact endpoint.
-        fetch("http://localhost:7071/api/contact", {
+        fetch("http://localhost:7071/api/contactresponsefunction", {
             method: 'post',
             body: JSON.stringify(payload)
         }).then(resp => {

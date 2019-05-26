@@ -1,3 +1,9 @@
+/*!
+ * Custom contact handler
+ */
+
+(function($) {   
+
     var contactForm = document.getElementById("contactform");
     var successMessage = document.getElementById("successmessage");
     
@@ -24,3 +30,4 @@
             contactForm.style.display = "none";
         });
     }
+});

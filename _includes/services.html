@@ -45,15 +45,23 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
+                <div id="success-message" style="display: none">
+                    <h3>Message Sent!</h3>
+                </div>
                 <form id="contactform" action="https://customerprocessor.azurewebsites.net/api/FormResponse">
+                    <div class="form-group">
+                        <label for="email">Name</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">Please enter your name.</small>
+                      </div>
                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Request Description</label>
-                        <input type="longtext" class="form-control" id="description" placeholder="Please describe the services you would like to request.">
+                        <label for="message">Request Description</label>
+                        <textarea type="longtext" class="form-control" id="message" placeholder="Please describe the services you would like to request.">
                       </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                  </form>

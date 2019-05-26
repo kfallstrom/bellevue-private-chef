@@ -16,7 +16,7 @@
         });
     
         // Post the payload to the contact endpoint.
-        fetch("http://localhost:7071/api/contactresponsefunction", {
+        fetch("https://customerprocessor.azurewebsites.net/api/FormResponse", {
             method: "post",
             body: JSON.stringify(payload)
         }).then(resp => {

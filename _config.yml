@@ -4,7 +4,7 @@ email: ann@bellevueprivatechef.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-contactendpoint: "https://customerprocessor.azurewebsites.net/api/FormResponse"
+contactendpoint: https://customerprocessor.azurewebsites.net/api/FormResponse
 instagram_username: bellevueprivatechef
 linkedin_username: bellevueprivatechef
 

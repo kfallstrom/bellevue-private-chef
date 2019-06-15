@@ -16,7 +16,7 @@
         });
     
         // Post the payload to the contact endpoint.
-        fetch("{{site.contactendpoint}}", {
+        fetch("https://customerprocessor.azurewebsites.net/api/FormResponse", {
             method: "post",
             body: JSON.stringify(payload)
         }).then(resp => {

@@ -4,26 +4,43 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Let's Get In Touch!</h2>
                 <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p>Ready to engage my services? That's great! Give me a call or send me an email and we will get back to you as soon as possible!</p>
             </div>
-        <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.twitter_username }}</p>
-            </a>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
+        <div class="col-lg-2 col-lg-offset-3 text-center">
             <a href="mailto:{{ site.email }}">
             <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                 <p>{{ site.email }}</p>
             </a>
         </div>
         <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://github.com/{{ site.github_username }}">
-            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+            <a href="https://instagram.com/{{ site.github_username }}">
+            <i class="fa fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                 <p>{{ site.github_username }}</p>
             </a>
         </div>
-
+<div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div id="success-message" style="display: none">
+                    <h3>Message Sent!</h3>
+                </div>
+                <form id="contactform" action="http://localhost:7071/api/ContactResponseFunction">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+                        <small id="emailHelp" class="form-text text-muted">Please enter your name.</small>
+                      </div>
+                     <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Request Description</label>
+                        <textarea class="form-control" id="message" rows=3></textarea>
+                      </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                 </form>
+            </div>
+        </div>
     </div>
 </section>

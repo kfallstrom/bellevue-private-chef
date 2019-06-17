@@ -1,7 +1,7 @@
 # Site settings
-title: Bellevue Private Chef
+title: Bellevue | Private | Chef
 email: ann@bellevueprivatechef.com
-description: > # this means to ignore newlines until "baseurl:"
+description: Nutritional Integrity | Taste | Art # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 contactendpoint: https://customerprocessor.azurewebsites.net/api/FormResponse

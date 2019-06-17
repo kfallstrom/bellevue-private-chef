@@ -12,7 +12,7 @@
     
         // Build JSON key-value pairs using the form fields.
         contactForm.querySelectorAll("input, textarea").forEach(field => {
-            payload[field.name] = field.value;
+            payload[field.id] = field.value;
         });
     
         // Post the payload to the contact endpoint.
